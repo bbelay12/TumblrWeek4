@@ -14,6 +14,12 @@
 		E248FE0F1DB1A31900A35CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E248FE0D1DB1A31900A35CAD /* LaunchScreen.storyboard */; };
 		E248FE1A1DB1A31900A35CAD /* TumblrWeek4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE191DB1A31900A35CAD /* TumblrWeek4Tests.swift */; };
 		E248FE251DB1A31A00A35CAD /* TumblrWeek4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE241DB1A31A00A35CAD /* TumblrWeek4UITests.swift */; };
+		E248FE331DB1AA7100A35CAD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE321DB1AA7100A35CAD /* HomeViewController.swift */; };
+		E248FE351DB1B0B700A35CAD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE341DB1B0B700A35CAD /* SearchViewController.swift */; };
+		E248FE371DB1B2C300A35CAD /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE361DB1B2C300A35CAD /* ComposeViewController.swift */; };
+		E248FE391DB1B36900A35CAD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE381DB1B36900A35CAD /* AccountViewController.swift */; };
+		E248FE3B1DB1B40700A35CAD /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE3A1DB1B40700A35CAD /* TrendingViewController.swift */; };
+		E248FE3D1DB1B46500A35CAD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE3C1DB1B46500A35CAD /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		E248FE201DB1A31900A35CAD /* TumblrWeek4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrWeek4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E248FE241DB1A31A00A35CAD /* TumblrWeek4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrWeek4UITests.swift; sourceTree = "<group>"; };
 		E248FE261DB1A31A00A35CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E248FE321DB1AA7100A35CAD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E248FE341DB1B0B700A35CAD /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E248FE361DB1B2C300A35CAD /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		E248FE381DB1B36900A35CAD /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		E248FE3A1DB1B40700A35CAD /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		E248FE3C1DB1B46500A35CAD /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				E248FE041DB1A31900A35CAD /* AppDelegate.swift */,
-				E248FE061DB1A31900A35CAD /* ViewController.swift */,
 				E248FE081DB1A31900A35CAD /* Main.storyboard */,
+				E248FE061DB1A31900A35CAD /* ViewController.swift */,
+				E248FE3C1DB1B46500A35CAD /* TabBarViewController.swift */,
+				E248FE3A1DB1B40700A35CAD /* TrendingViewController.swift */,
+				E248FE381DB1B36900A35CAD /* AccountViewController.swift */,
+				E248FE361DB1B2C300A35CAD /* ComposeViewController.swift */,
+				E248FE341DB1B0B700A35CAD /* SearchViewController.swift */,
+				E248FE321DB1AA7100A35CAD /* HomeViewController.swift */,
 				E248FE0B1DB1A31900A35CAD /* Assets.xcassets */,
 				E248FE0D1DB1A31900A35CAD /* LaunchScreen.storyboard */,
 				E248FE101DB1A31900A35CAD /* Info.plist */,
@@ -262,8 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E248FE3D1DB1B46500A35CAD /* TabBarViewController.swift in Sources */,
+				E248FE3B1DB1B40700A35CAD /* TrendingViewController.swift in Sources */,
+				E248FE371DB1B2C300A35CAD /* ComposeViewController.swift in Sources */,
 				E248FE071DB1A31900A35CAD /* ViewController.swift in Sources */,
+				E248FE391DB1B36900A35CAD /* AccountViewController.swift in Sources */,
 				E248FE051DB1A31900A35CAD /* AppDelegate.swift in Sources */,
+				E248FE351DB1B0B700A35CAD /* SearchViewController.swift in Sources */,
+				E248FE331DB1AA7100A35CAD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +436,6 @@
 		E248FE2A1DB1A31A00A35CAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8E3979W3PG;
 				INFOPLIST_FILE = TumblrWeek4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,7 +448,6 @@
 		E248FE2B1DB1A31A00A35CAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8E3979W3PG;
 				INFOPLIST_FILE = TumblrWeek4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,6 +534,7 @@
 				E248FE2B1DB1A31A00A35CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E248FE2C1DB1A31A00A35CAD /* Build configuration list for PBXNativeTarget "TumblrWeek4Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +543,7 @@
 				E248FE2E1DB1A31A00A35CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E248FE2F1DB1A31A00A35CAD /* Build configuration list for PBXNativeTarget "TumblrWeek4UITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +552,7 @@
 				E248FE311DB1A31A00A35CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
