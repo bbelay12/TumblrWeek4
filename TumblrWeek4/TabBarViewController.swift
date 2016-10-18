@@ -10,7 +10,8 @@ import UIKit
 
 class TabBarViewController: UIViewController {
     
-    @IBOutlet weak var contentView: UIScrollView!
+    
+    @IBOutlet weak var contentView: UIView!
     var homeViewController: UIViewController!
     var searchViewController: UIViewController!
     var composeViewController:UIViewController!
@@ -20,26 +21,31 @@ class TabBarViewController: UIViewController {
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     
+    @IBOutlet weak var exploreButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIView.animate(withDuration:0.8, delay: 0.0,
+                       options: [.autoreverse,.repeat], animations: { () -> Void in
+                        self.exploreButton.transform = CGAffineTransform(translationX: 0, y: 10)
+            }, completion: nil)
         //instantiate each ViewController
-           homeViewController = main.instantiateViewController(withIdentifier: "HomeViewController")
+        homeViewController = main.instantiateViewController(withIdentifier: "HomeViewController")
         
-         searchViewController = main.instantiateViewController(withIdentifier: "SearchViewController")
+        searchViewController = main.instantiateViewController(withIdentifier: "SearchViewController")
         
-      //composeViewController = main.instantiateViewController(withIdentifier: "ComposeViewController")
+        //composeViewController = main.instantiateViewController(withIdentifier: "ComposeViewController")
         
-         accountViewController = main.instantiateViewController(withIdentifier: "AccountViewController")
+        accountViewController = main.instantiateViewController(withIdentifier: "AccountViewController")
         
-         trendingViewController = main.instantiateViewController(withIdentifier: "TrendingViewController")
+        trendingViewController = main.instantiateViewController(withIdentifier: "TrendingViewController")
         
-       // contentView.contentSize = CGSize (w)
-       // Add each ViewController to your viewControllers array
+        // contentView.contentSize = CGSize (w)
+        // Add each ViewController to your viewControllers array
         viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
-   
+        
         //Set the Initial Tab when the App Starts.
         //buttons[selectedIndex].isSelected = true
-       // didPressTab(buttons[selectedIndex])
+        // didPressTab(buttons[selectedIndex])
         
         
         
@@ -49,16 +55,18 @@ class TabBarViewController: UIViewController {
     @IBAction func didTapHomeButton(_ sender: UIButton) {
         let previousIndex = selectedIndex
         selectedIndex = sender.tag
-    
-     
+        
+        
         homeViewController.view.frame = contentView.bounds
         contentView.addSubview(homeViewController.view)
     }
-
-   
+    
+    
     @IBAction func didTapSearchButton(_ sender: UIButton) {
         //keep track of the previous button
         let previousIndex = selectedIndex
+        self.exploreButton.alpha = 0
+
         
         //Set the selectedIndex to the tag value of which ever button was tapped
         selectedIndex = sender.tag
@@ -70,13 +78,13 @@ class TabBarViewController: UIViewController {
         //let previousVC = viewControllers[previousIndex]
         
     }
-
+    
     
     @IBAction func didTapAccountButton(_ sender: UIButton) {
         let previousIndex = selectedIndex
         selectedIndex = sender.tag
-       // buttons[previousIndex].isSelected = false
-       // let previousVC = viewControllers[previousIndex]
+        // buttons[previousIndex].isSelected = false
+        // let previousVC = viewControllers[previousIndex]
         accountViewController.view.frame = contentView.bounds
         
         contentView.addSubview(accountViewController.view)
@@ -90,9 +98,9 @@ class TabBarViewController: UIViewController {
         //Set the selectedIndex to the tag value of which ever button was tapped
         selectedIndex = sender.tag
         //Use the previousIndex to access the previous ViewController from the viewControllers array.
-
+        
         //let previousVC = viewControllers[previousIndex]
-
+        
         trendingViewController.view.frame = contentView.bounds
         contentView.addSubview(trendingViewController.view)
     }

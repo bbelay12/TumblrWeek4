@@ -20,6 +20,7 @@
 		E248FE391DB1B36900A35CAD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE381DB1B36900A35CAD /* AccountViewController.swift */; };
 		E248FE3B1DB1B40700A35CAD /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE3A1DB1B40700A35CAD /* TrendingViewController.swift */; };
 		E248FE3D1DB1B46500A35CAD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248FE3C1DB1B46500A35CAD /* TabBarViewController.swift */; };
+		E2A991DB1DB5BC7100EAE1C8 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A991DA1DB5BC7100EAE1C8 /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E248FE381DB1B36900A35CAD /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		E248FE3A1DB1B40700A35CAD /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		E248FE3C1DB1B46500A35CAD /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E2A991DA1DB5BC7100EAE1C8 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				E248FE041DB1A31900A35CAD /* AppDelegate.swift */,
 				E248FE081DB1A31900A35CAD /* Main.storyboard */,
+				E2A991DA1DB5BC7100EAE1C8 /* loginViewController.swift */,
 				E248FE061DB1A31900A35CAD /* ViewController.swift */,
 				E248FE3C1DB1B46500A35CAD /* TabBarViewController.swift */,
 				E248FE3A1DB1B40700A35CAD /* TrendingViewController.swift */,
@@ -288,6 +291,7 @@
 				E248FE051DB1A31900A35CAD /* AppDelegate.swift in Sources */,
 				E248FE351DB1B0B700A35CAD /* SearchViewController.swift in Sources */,
 				E248FE331DB1AA7100A35CAD /* HomeViewController.swift in Sources */,
+				E2A991DB1DB5BC7100EAE1C8 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
